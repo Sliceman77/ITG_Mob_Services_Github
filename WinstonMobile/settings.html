@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <!-- The above 3 meta tags *must* come first -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>WINSTON | Mobile Coupon Application</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+ <link href="css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div style="padding-top:20px; padding-right:10px;">
+                <a href="#"><img src="images/winston-logo.png" class="img img-responsive" alt="Winston"></a>
+            </div>
+
+
+
+
+
+
+            <ul class="sidebar-nav">
+                <!-- <li class="sidebar-brand">
+                   
+                </li>-->
+                <li style="border-top: 1px solid #87754e;">
+                    <a href="home.html"><i class="fa fa-home"></i>
+ HOME</a>
+                </li>
+                <li>
+                    <a href="stores.html"><i class="fa fa-barcode"></i>
+ COUPON</a>
+                </li>
+                <li>
+                    <a href="settings.html"><i class="fa fa-cog"></i> SETTINGS</a>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-sign-out"></i> LOGOUT</a>
+                </li>
+
+
+
+            </ul>
+
+            <img class="sidebar-img" src="images/sidebar-bottom.png" alt="">
+
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+
+
+            <div class="mynav">
+
+                <div class="col-xs-2">
+                    <!-- <a class="pull-left" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-lg"></i></a>-->
+                </div>
+
+                <div class="col-xs-8"><img class="img center-block" src="images/itg-logo.png" alt="">
+                </div>
+
+                <div class="col-xs-2">
+                     <a style="padding-top:6px;" id="sgwbar"class="pull-right" href="" data-toggle="modal" data-target="#sgw"> <img src="images/sgw.png" alt="SGW">
+                    </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="container">
+                <div class="greybar">&nbsp;</div>
+
+                <div class="content">
+
+                    <div class="row" style="margin-bottom:20px;">
+                        <div class="col-sm-12">
+                            <h3 class="text-center" style="padding-top:20px;"><img src="images/pack-small.png" alt=""> Settings</h3>
+                            <p class="text-center">
+                                <small>Application limited to eligible smokers 21 years of age or older.</small>
+                            </p>
+                                   </div>     </div>
+                                   
+                                   
+                                   
+      <div class="row" style="margin-bottom:20px;">
+  <div class="col-xs-12">
+  
+  <label class="checkbox-inline">
+  <input checked data-toggle="toggle" type="checkbox">&nbsp;&nbsp; &nbsp;  <span style="font-weight:bold;">SOUND</span>
+</label>
+ <hr>
+  <label class="checkbox-inline">
+  <input checked data-toggle="toggle2" type="checkbox">&nbsp;&nbsp; &nbsp;  <span style="font-weight:bold;">HD VIDEO</span>
+</label>
+  <hr>
+ <label class="checkbox-inline">
+  <input checked data-toggle="toggle3" type="checkbox">&nbsp;&nbsp; &nbsp;  <span style="font-weight:bold;">VIBRATIONS</span>
+</label>
+  <hr>
+ <label class="checkbox-inline">
+  <input checked data-toggle="toggle4" type="checkbox">&nbsp;&nbsp; &nbsp;  <span style="font-weight:bold;">NOTIFICATIONS</span>
+</label>
+ 
+  
+  
+  </div>
+</div>                        
+                            
+                            
+                         
+                         
+                                
+                 
+                               
+                               
+                               
+                               
+                           
+                                 
+                            
+ <div class="row" style="margin-bottom:20px;">
+                        <div class="col-sm-12">
+                           
+ <h3 class="text-center">Account Information</h3>
+                          
+                         
+<hr>
+
+    
+     
+ <form>     
+       
+  
+ 
+  <div class="form-group">
+    <label for="name">First Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Jim" >
+  </div>
+  <div class="form-group">
+    <label for="lname">Last Name</label>
+    <input type="text" class="form-control" id="lname" placeholder="Smith" >
+  </div>
+  
+    <div class="form-group">
+    <label>Mailing Address</label>
+    <input type="text" class="form-control" placeholder="345 Meadowbrook" >
+  </div>
+    <div class="form-group">
+    <label>Apt/Suite/Floor</label>
+    <input type="text" class="form-control" placeholder="Apt/Suite/Floor" >
+  </div>
+  
+      <div class="form-group">
+    <label>City</label>
+    <input type="text" class="form-control" placeholder="High Point" >
+  </div>
+  
+        <div class="form-group">
+    <label>State</label>
+   <select class="form-control" >
+   <option value="NC" selected>North Carolina</option>
+<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select>
+  </div>
+  
+  
+       <div class="form-group">
+    <label>Zip Code</label>
+    <input type="text" class="form-control" placeholder="27262" >
+  </div>
+
+
+ <a class="btn btn-success pull-right" style="width:40%" href="home.html">SAVE</a>
+
+
+</form>
+
+
+
+ </div>
+ </div>
+               
+
+
+
+                </div>
+
+                <div class="footer">
+
+
+                    <p>
+                        For more INFORMATION about ITG Brands, LLC or its products, visit <a href="http://itgbrands.com">itgbrands.com.</a>
+                        <br> NEED SITE ASSISTANCE? CALL 1-866-233-6527
+                    </p>
+
+                    <p><a href="#" data-toggle="modal" data-target="#contact">Contact Us</a>
+                        <a href="#" data-toggle="modal" data-target="#terms">Terms &amp; Conditions</a>
+                        <a href="#" data-toggle="modal" data-target="#privacy">Privacy Policy</a>
+                        <a href="#" data-toggle="modal" data-target="#filter">Filtering Software</a>
+                        <a href="http://www.itgbrands.com" target="_blank">ITG Brands</a>
+                        <a href="#" data-toggle="modal" data-target="#remove">Remove Me</a>
+                    </p>
+                    <p style="font-size:9px;">&copy;2015 ITG Brands, LLC</p>
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>CONTACT US</h4>
+                </div>
+                <div class="modal-body">
+                    <p> For product questions or comments, call the lTG Brands Customer Contact Center @ 1-866-233-6527. Customer service is available during regular business hours, Monday through Friday – 9 a.m. to 4:30 p.m. (eastern).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal2 -->
+    <!-- Modal -->
+    <div class="modal fade" id="terms" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>TERMS AND CONDITIONS</h4>
+                </div>
+                <div class="modal-body contrain-modal">
+
+                    <h4>Terms and Conditions of Use</h4>
+
+                    <p><strong>Terms and Conditions</strong>
+                        <br> This website (referred to herein as "Site") is owned and operated by ITG Brands, LLC. (referred to herein as "ITGB" or "We"). This Site is intended only for adult smokers 21 years of age or over for their personal, non-commercial use. Access to and use of this Site are subject to the following Terms and Conditions and all applicable laws.</p>
+
+                    <p>This Site is an age-restricted website. ITGB will continually reinforce the fact that this Site is intended for adult smokers 21 years of age or older only. ITGB requires that all visitors to this Site enter their email address and establish and use a password to enter the Site. Customer ID numbers are assigned, should not be shared and should only be used by the adult smoker who received the ID number.</p>
+
+                    <p>By using this Site you accept and are bound by these Terms and Conditions without limitation, qualification or change. You represent that you have read and agree to these Terms and Conditions at all times while using this Site. If at any time you determine that you do not accept all of these Terms and Conditions, you must immediately discontinue use of this Site and destroy all materials and copies of materials obtained from this Site. You may not use this Site in any way that involves a failure to abide by any Term or Condition. These Terms and Conditions apply to all proprietary pages, images, text, programs and other material available throughout this Site.</p>
+
+                    <p>ITGB reserves the right to change these Terms and Conditions at any time at its sole and exclusive discretion. It is your responsibility to check these Terms and Conditions periodically for changes. By continuing to use this Site after a change is made, you accept and are bound by the modified Terms and Conditions. Only ITGB may alter these Terms and Conditions.</p>
+
+                    <p><strong>DISCLAIMERS AND LIMITATION OF LIABILITY</strong>
+                        <br> THIS SITE AND ALL OF ITS CONTENTS ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO: (A) THE ACCURACY OR COMPLETENESS OF THE INFORMATION OR CONTENTS ON THE SITE AND WE ASSUME NO RESPONSIBILITY FOR ANY ERRORS OR OMISSIONS IN ITS INFORMATION AND/OR CONTENT; (B) THE AVAILABILITY FOR USE OF ANY INTELLECTUAL PROPERTY OF ANY THIRD PARTY SUCH AS BUT NOT LIMITED TO COPYRIGHTED, PATENTED, TRADEMARKED OR PROPRIETARY MATERIALS OF THIRD PARTIES THAT MAY APPEAR IN THIS SITE; (C) COMPUTER VIRUSES, WORMS OR BUGS OR ANY OTHER DIGITAL OR ELECTRONIC MATTER THAT THIRD PARTIES MAY EMBED IN OR ATTACH TO THIS SITE OR ANY CONTENTS OF THIS SITE, OR IN MATERIAL OR CONTENT PROVIDED FOR DOWNLOADING FROM THIS SITE, (D) ANY SOFTWARE MADE AVAILABLE FOR DOWNLOADING, COPYING OR OTHER USE THROUGH THIS SITE WHETHER OUR OWN OR THAT OF THIRD PARTIES; (E) THE MERCHANTABILITY, FITNESS FOR USE, TITLE AND/OR NON-INFRINGEMENT OF ANY OR ALL OF THE CONTENTS OF THIS SITE; (F) THAT FUNCTIONS CONTAINED ON THIS SITE OR IN ANY OF THE CONTENT ON THIS SITE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THIS SITE OR THE SERVERS THAT MAKE THIS SITE AND ITS CONTENT AVAILABLE ARE FREE OF VIRUSES, WORMS, BUGS OR OTHER HARMFUL COMPONENTS WHATSOEVER. NEITHER WE NOR ANYONE (PERSON OR ENTITY) INVOLVED IN THE CREATION, DESIGN, MAINTAINANCE OR DELIVERY OF THIS SITE OR WHOSE INFORMATION OR CONTENT APPEAR ON THIS SITE SHALL HAVE ANY LIABILITY (WHETHER BASED ON NEGLIGENCE, CONTRACT, TORT, STATUTE OR OTHERWISE) FOR ANY COSTS, LOSSES, DAMAGES (WHETHER DIRECT, INDIRECT, COMPENSATORY, SPECIAL, LOST PROFITS, LIQUIDATED, CONSEQUENTIAL OR PUNITIVE), ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS TO, BROWSING OF, OR USE OF THIS SITE, OR INABILITY TO USE THIS SITE, OR THE FUNCTIONS OR CONTENTS OF THIS SITE, OR ANY OF THE INFORMATION OR CONTENT OF THIS SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. FURTHER, WE DO NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE OF THE CONTENT ON THIS SITE RELATIVE TO THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
+
+                    <p><strong>DOWNLOADING</strong>
+                        <br> ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THIS SITE IS DONE AT YOUR SOLE RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL.</p>
+
+                    <p><strong>Indemnification</strong>
+                        <br> You agree to indemnify and hold harmless and upon request defend, ITGB, its licensors, employees, and the like, from all liabilities, claims, and expenses, including attorney’s fees, that arise from your use or misuse of this Site and/or breach of these Terms. ITGB reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event you will cooperate with ITGB in asserting any available defenses.</p>
+
+                    <p><strong>Contests and Sweepstakes</strong>
+                        <br> This Site provides Official Rules for certain activities including, without limitation, sweepstakes, contests, e-mail services, and electronic postcards. Each has its own rules, which you must read and agree to before you may enter.</p>
+
+                    <p><strong>Third Party Content and Links</strong>
+                        <br> At certain places on this Site, users may be able to link to other Internet addresses. These other sites may or may not be under the control of ITGB, and you acknowledge that ITGB is not responsible for the accuracy, copyright compliance, legality, decency, or any other aspect of such sites. The inclusion of such a link does not imply endorsement of the site by ITGB or any association with its operators. Use of any information on this Site or obtained from linked addresses is voluntary and reliance on it should only be undertaken after an independent review. A link or reference herein to any specific commercial product, process or service by trademark name, trademark, service mark, manufacturer or otherwise does not constitute or imply endorsement, recommendation or favoring by ITGB.</p>
+
+                    <p><strong>Copyright and Trademark Notice</strong>
+                        <br> This Site and its contents are, or may be protected by copyright, trademark, patent and other laws of the United States and may be protected by the same or similar laws of other countries. Except as specifically permitted by these Terms, any copying, reproduction, display, or retransmission of the contents or any portion of the contents of this Site is strictly prohibited. Any use of trademarks, service marks, trade names, or logos is strictly prohibited without the prior written consent of ITGB. In addition, the trademarks, service marks, trade names, service names and logos of third parties that appear on this Site may be proprietary to their respective owners and may be used only with the owner’s express written permission, and are protected pursuant to U.S. and international copyright laws.</p>
+
+                    <p><strong>User Access</strong>
+                        <br> We may change, suspend or discontinue any aspect of our online services at any time, including the availability of any feature, database, or content available at this Site. We may also impose limits on certain features and services or restrict your access to parts or all of this Site without notice or liability.</p>
+
+                    <p><strong>Privacy and Security</strong>
+                        <br> We respect the privacy of visitors to our Site. For more information about how we use and protect the personal information you may provide through our Site, please see the section below entitled, "The Information We Collect." Please note that ITGB reserves the right to change its privacy policy at any time without notice.</p>
+
+                    <p>Please note that this Site may contain links to other Internet websites. Whenever you travel to another website you should review its privacy policy. ITGB is not responsible for the contents or privacy practices of third-party sites.</p>
+
+                    <p><strong>The Information We Collect</strong>
+                        <br> By submitting information to this Site you acknowledge that you are responsible for the legality, reliability, appropriateness, originality, and copyright of such materials. If you provide your email address it will only be used by ITGB to communicate with you and will not be sold to any outside companies. If you provide your mailing address ITGB will follow the privacy policy below: ITGB is committed to respecting and protecting the privacy of our consumers. We adhere to a strict consumer information privacy policy, which includes the following key provisions: 1. No information provided by a consumer will be sold or transferred to a third party (except that ITGB reserves the right to provide such records or information to law enforcement officials or other government entities if required to do so by law or if ITGB, in its sole discretion, believes it to be appropriate.) 2. Only ITGB and those acting under our authority to promote our cigarette brands and issues related to our company will have access to a consumer’s data. 3. Only names, addresses and date of birth of adult smokers who wish to receive information about our brands and programs will be maintained on our active mailing list. 4. Adult smokers who wish to remove their names from our mailing list can do so by calling toll-free 1-866-233-6527.</p>
+
+                    <p>ITGB reserves the right to change its privacy policy in the future.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal3 -->
+    <div class="modal fade" id="privacy" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>PRIVACY POLICY</h4>
+                </div>
+                <div class="modal-body contrain-modal">
+
+                    <h4>Privacy Policy</h4>
+
+                    <p>This web site is owned and operated by ITG Brands LLC ("ITGB") for your personal, non-commercial use only. The site is intended for the use of adults only. If you are under 18 years of age, you should discontinue use of this site.</p>
+
+                    <p>This site is operated only to provide general information about our company. It is not operated for advertising or marketing purposes. The material on the site should not be regarded as an offer to sell, or a solicitation of an offer to buy, any ITGB product. We advertise, market and sell our products only in compliance with the laws of the particular jurisdictions in which they are sold, and in compliance with the provisions of the Master Settlement Agreement and FDA regulations.</p>
+
+                    <p>The information that we make available on this site is not necessarily accurate, complete or current. Because we provide this material for general information only, you should not rely upon or use it as the sole basis for making significant decisions without consulting primary or more accurate, more complete or timelier sources of information. If you rely on the material on this site, that reliance will be at your own risk. Although we may modify the contents of this site, we do not have any obligation to update it. It is your responsibility to monitor changes.</p>
+
+                    <p>Application of Terms and Conditions</p>
+
+                    <p>When you enter and use this site, you accept and are bound by these terms and conditions, and you represent that you have read and agree to the terms and conditions. If at any time you determine that you do not accept all of the terms and conditions, you should stop using the site and destroy all materials and copies of materials you have obtained while using the site.</p>
+
+                    <p>ITGB may change these terms and conditions at any time at its sole and exclusive discretion by posting any revised terms on the site. You should check periodically for any changes that we may have made. If you continue to use the site after a change is made, you accept and are bound by the changed terms and conditions.</p>
+
+                    <p>Provisions Regarding Jurisdiction</p>
+
+                    <p>ITGB is incorporated in Texas and its principle place of business is in North Carolina, in the United States of America, and this site is operated in the United States. The laws of the State of North Carolina govern the terms and conditions and your use of the site, and you irrevocably consent to the exclusive jurisdiction of the courts located in North Carolina for any action to enforce these terms and conditions. We recognize that it is possible for you to obtain access to this site from any jurisdiction in the world, but we have no practical ability to prevent such access. This site has been designed to comply with the laws of North Carolina and of the United States. If any material on this site, or your use of the site, is contrary to the laws of the place where you are when you access it, the site is not intended for you, and we ask you not to use the site. You should inform yourself of the laws of your jurisdiction and comply with them.</p>
+
+                    <p>General Liability, Disclaimer of Warranties</p>
+
+                    <p>THIS SITE AND ANY SITE OR SITES LINKED TO THIS SITE ARE PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THE RIGHTS OF THIRD PARTIES. ITG BRANDS, LLC, ITS AFFILIATES, THEIR DIRECTORS, OFFICERS, EMPLOYEES, SHAREHOLDERS, AGENTS OR ANY OTHERS INVOLVED IN THE CREATION OF THE SITE SHALL NOT BE LIABLE FOR ANY DIRECT, INCIDENTAL, CONSEQUENTIAL, INDIRECT, SPECIAL OR PUNITIVE DAMAGES ARISING OUT OF ACCESS TO OR USE OF ANY CONTENT OF THIS SITE OR THE CONTENT OF ANY SITE OR SITES LINKED TO THIS SITE, INCLUDING BUT NOT LIMITED TO ITG BRAND, LLC’S NEGLIGENCE, YOUR ACCESS TO AND USE OF THE SITE, THE UNAVAILABILITY OF THE SITE, ERRORS OR INACCURACIES CONTAINED ON THE SITE, OR THE DEFAMATORY, OFFENSIVE OR ILLEGAL CONDUCT OF, OR MATERIAL POSTED BY, ANY USER OF THE SITE, EVEN IF YOU HAVE ADVISED IT BRANDS, LLC IN ADVANCE OF THE POSSIBILITY OF SUCH DAMAGE. ITG BRANDS, LLC, ITS AFFILIATES, THEIR DIRECTORS, OFFICERS, EMPLOYEES, SHAREHOLDERS, AGENTS OR ANY OTHERS INVOLVED IN THE CREATION OF THE SITE SHALL NOT BE LIABLE FOR ANY DIRECT, INCIDENTAL, CONSEQUENTIAL, INDIRECT, SPECIAL OR PUNITIVE DAMAGES FOR ANY DAMAGE TO YOUR COMPUTER, COMPUTER SYSTEM OR OTHER PROPERTY, DURING OR ON ACCOUNT OF ACCESS OR USE OF THE SITE OR ANY SITES TO WHICH THIS SITE LINKS, INCLUDING BUT NOT LIMITED TO DAMAGE CAUSED BY COMPUTER SOFTWARE ROUTINES SUCH AS VIRUSES, "WORMS" OR "TROJAN HORSES," "TIME BOMBS," "DROP DEAD DEVICES."</p>
+
+                    <p>User Information</p>
+
+                    <p>We will treat any information, communication or material you provide, post or transmit to us through this site as non-confidential and non-proprietary. That material will become our exclusive property. We will use that material only to respond to inquiries you make in connection with the site, however.</p>
+
+                    <p>We will not collect your personal information unless you specifically provide it. We may record your domain name or names in order to compile statistical records on your and other visitors’ use of the site. You cannot be individually identified or contacted through this information.</p>
+
+                    <p>We may also use "cookie" technology. These cookies may tell us whether you have visited our site before or are a new visitor and what material on our site you have viewed. The cookies also may enable the sending of electronic mail messages from our web site</p>.
+
+                    <p>We will not sell or otherwise provide to third parties any personal information you provide us through use of the site or communications with or through the site. We do, however, reserve the right to provide such records or information to law enforcement officials or other government entities if we are required to do so by law or if we, in our sole discretion, believe providing that information to be appropriate.</p>
+
+                    <p>We may change this user information policy in the future at any time in our sole discretion by posting any revisions to this site. It is your responsibility to monitor changes to the user information policy.</p>
+
+                    <p>Our site may contain links to other web sites. We do not control these other web sites, and you should consult these other web sites’ privacy policies regarding the use of your information.</p>
+
+                    <p>The Use of Intellectual Property</p>
+
+                    <p>This site and all of its contents are protected by copyright, trademark and other laws of the United States, as well as international conventions and the laws of other countries. The site and the contents of the site are owned and controlled by ITG Brands, LLC, or the party credited as the provider of the particular content at issue, if different than ITG Brands.</p>
+
+                    <p>You may browse through the site and download copies of materials on the site that are of personal interest to you for personal, non-commercial use. You must keep intact all copyright, trademark and other notices contained in any personal copies. No part of the information on this site may be distributed, copied, modified, revised, transmitted or reproduced for commercial or non-personal use without the prior written consent of ITG Brands, LLC.</p>
+
+                    <p>If you have any comments regarding the site, our privacy policy, and the terms and conditions governing your use of the site, please Contact Us.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="filter" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>FILTERING SOFTWARE</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-sm-4" style="margin-bottom:20px;"><img src="images/cyblogo.gif" alt=""></div>
+
+                    <div class="col-sm-8">
+                        <p>This site is registered with the filtering service listed here as an age-restricted site. To find out more about filtering software, click the icon.</p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <form>
+        <!-- Modal 5 -->
+        <div class="modal fade" id="remove" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>REMOVE ME</h4>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <div class="col-sm-12">
+
+                            <p class="text-center">Unsubscribe from all mailings by entering your email and password OR your Customer ID and Birth Year.</p>
+
+
+
+
+
+
+                            <div class="form-group">
+                                <label for="removeEmail">Email Address</label>
+                                <input type="email" class="form-control" id="removeEmail" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="removePassword">Password</label>
+                                <input type="password" class="form-control" id="removePassword" placeholder="Password" required>
+
+                            </div>
+
+                            <div class="strike"><span>OR</span></div>
+
+
+                            <div class="form-group">
+                                <label for="removePin">Customer PIN</label>
+                                <input type="text" class="form-control" id="removePin" placeholder="Customer PIN" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="removeEmail">Birth Year:</label>
+
+                                <select class="form-control">
+                                    <option>Choose...</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                    <option>etc...</option>
+                                </select>
+                            </div>
+
+
+                            <p class="text-center"> Don't have this information? <a href="#">Click here</a> for more options. </p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">Close</button>
+                        <button type="submit" class="btn btn-grey"><i class="fa fa-sign-in fa-lg"></i> SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="sgw" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>SURGEON GENERAL'S WARNING</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-sm-12">
+
+                        <p>
+                            <img class="center-block img img-responsive" src="images/sgw-a.png" alt="SGW">
+                        </p>
+
+                        <p>
+                            <img class="center-block img img-responsive" src="images/winston-logo.png" alt="Winston">
+                        </p>
+                        <p>
+                            Nothing about our cigarettes or packaging, including color, should be interpreted to mean that any cigarette is safer than any other cigarette. Nothing about our cigarettes will help you quit smoking.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- user -->
+    <div class="modal fade" id="user" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>USER INFORMATION</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="col-sm-12">
+
+                        <p>Our records show the following username associated with account.</p>
+                        <div class="form-group">
+                            <label>Your User Name</label>
+                            <input type="text" class="form-control" id="zip" placeholder="jdoe2015" disabled>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="userpop" type="button" data-dismiss="modal" aria-label="Close" class="btn btn-grey">OK Got it!</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--JavaScript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.progressTimer.js"></script>
+     <script src="js/bootstrap-toggle.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        jQuery(document).ready(function ($) {
+
+
+
+
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+
+            $('body').addClass('animated fadeIn');
+            
+            
+                 $(function() {
+    $('#toggle-event, #toggle-event2, #toggle-event3, #toggle-event4').change(function() {
+      
+    })
+  })
+    
+
+            $(function () {
+                $('#datetimepicker9').datetimepicker({
+                    viewMode: 'years'
+                });
+            });
+
+          
+
+        });
+    </script>
+</body>
+
+</html>
